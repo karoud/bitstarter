@@ -11,7 +11,7 @@ var buffer=fs.readFileSync('/home/ubuntu/bitstarter/index.html',function(err,dat
 });
 var str=buffer.toString();
 app.get('/', function(request, response) {
-  response.send(str);
+  response.send('Hello Mandel');
 });
 
 var port = process.env.PORT || 5000;
